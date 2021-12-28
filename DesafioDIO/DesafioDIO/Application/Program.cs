@@ -36,13 +36,28 @@ namespace DesafioDIO
                             break;
                         default:
                             throw new ArgumentOutOfRangeException();
+                            
 
                     }
 
                 }
                 catch (ArgumentOutOfRangeException e)
                 {
+                    Console.Clear();
+
                     Console.WriteLine(e.Message);
+                    Console.WriteLine("Aperte qualquer tecla para continuar");
+
+                    Console.Clear();
+                }
+                catch (Exception e)
+                {
+                    Console.Clear();
+
+                    Console.WriteLine(e.Message);
+                    Console.WriteLine("Aperte qualquer tecla para continuar");
+
+                    Console.Clear();
                 }
 
                 opcaoUsuario = ExibirMenuPrincipal();
