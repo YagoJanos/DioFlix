@@ -8,7 +8,7 @@ Além disso, implementei programação defensiva em todo o programa para que as 
 
 Quanto ao design, criei uma classe chamada Cinematografia que generaliza tanto a classe Filme quanto a classe Serie e que contem todos os atributos e métodos antes pertencentes
 apenas à classe Serie, ou seja, agora Filme e Serie herdam de Cinematografia, o que permite o reaproveitamento de código.
-A fim de prover uma melhor experiência foi implementada uma tela estática ao fim de cada operação do CRUD contendo o resultado da mesma, essa tela permanece até que o usuário digite qualquer coisa então retornando ao menu anterior.
+A fim de prover uma melhor experiência para o usuário foi implementada uma tela estática ao fim de cada operação do CRUD contendo o resultado da mesma, essa tela permanece até que o usuário digite qualquer coisa então retornando ao menu anterior.
 
 #
 ## No que estou trabalhando agora:
