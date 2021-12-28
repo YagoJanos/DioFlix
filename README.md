@@ -13,6 +13,6 @@ A fim de prover uma melhor experiência para o usuário foi implementada uma tel
 #
 ## No que estou trabalhando agora:
 
-- Singleton nas classes dos repositórios, pois mesmo que seu uso seja considerado uma prática um pouco ruim por ir em sentido oposto ao princípio da responsabilidade única do SOLID, como se trata de um repositório único para filmes e um repositório único para séries, seria bom que não houvesse mais de uma instanância desses repositórios.
+- Singleton nas classes dos repositórios, pois mesmo que seu uso seja considerado uma prática um pouco ruim por ir em sentido oposto ao princípio da responsabilidade única do SOLID, como se trata de um repositório único para filmes e um repositório único para séries, seria bom que não houvesse mais de uma instância desses repositórios.
 - Criação de uma classe abstrata que implementa a interface IRepositorio e é superclasse de SerieRepositorio e FilmeRepositorio, com o intuito de fazer com que essa classe abstrata possua a implementação genérica dos métodos de manipulação de repositório que serão usadas por ambas as classes filhas (pelo repositório de filmes e pelo repositório de séries), pois dessa forma caso haja necessidade de criação de mais algum repositório, bastará a criação de uma outra classe, respeitando o Open/Closed Principle do Solid e o reaproveitamento de código.
 - Reorganização dos métodos da classe Program em outras classes pertencentes às pastas Views e Controllers para reorganização do projeto em MVC.
