@@ -179,7 +179,13 @@ namespace DesafioDIO
 
             if(indiceSerie >= repositorioSeries.Lista().Count)
             {
+                Console.Clear();
+
                 Console.WriteLine("Não há elemento nessa posição");
+
+                Console.WriteLine("Aperte qualquer botão para continuar");
+                Console.ReadLine();
+                Console.Clear();
                 return;
             }
 
@@ -193,6 +199,7 @@ namespace DesafioDIO
             Console.WriteLine("Série atualizada com sucesso");
             Console.WriteLine();
             Console.WriteLine("Aperte qualquer tecla");
+            Console.ReadLine();
             Console.Clear();
 
 
@@ -206,7 +213,14 @@ namespace DesafioDIO
 
             if(indiceFilme >= repositorioFilmes.Lista().Count)
             {
+                Console.Clear();
+
+
                 Console.WriteLine("Não há elemento nessa posição");
+
+                Console.WriteLine("Aperte qualquer tecla para continuar");
+                Console.ReadLine();
+                Console.Clear();
                 return;
             }
 
@@ -221,6 +235,7 @@ namespace DesafioDIO
             Console.WriteLine("Filme atualizado com sucesso");
             Console.WriteLine();
             Console.WriteLine("Aperte qualquer tecla");
+            Console.ReadLine();
             Console.Clear();
 
         }
@@ -313,19 +328,25 @@ namespace DesafioDIO
 
             if (indiceSerie >= repositorioSeries.Lista().Count)
             {
+                Console.Clear();
+
                 Console.WriteLine("Não há elemento nessa posição");
+
+                Console.WriteLine("Aperte qualquer tecla para continuar");
+                Console.ReadLine();
+                Console.Clear();
                 return;
             }
 
 
 
-            Console.WriteLine("Deseja mesma excluir '" + repositorioSeries.RetornaPorId(indiceSerie).RetornaTitulo() + "'? S/N");
+            Console.WriteLine("Deseja mesma excluir \"" + repositorioSeries.RetornaPorId(indiceSerie).RetornaTitulo() + "\"? S/N");
             string confirmacao = Console.ReadLine();
             
             if(confirmacao.ToUpper() == "S")
             {
                 repositorioSeries.Exclui(indiceSerie);
-                Console.WriteLine("A série " + repositorioSeries.RetornaPorId(indiceSerie) + " foi excluída");
+                Console.WriteLine("A série \"" + repositorioSeries.RetornaPorId(indiceSerie).RetornaTitulo() + "\" foi excluída");
             }
 
 
@@ -347,7 +368,13 @@ namespace DesafioDIO
 
             if (indiceFilme >= repositorioFilmes.Lista().Count)
             {
+                Console.Clear();
+
                 Console.WriteLine("Não há elemento nessa posição");
+
+                Console.WriteLine("Aperte qualquer tecla para continuar");
+                Console.ReadLine();
+                Console.Clear();
                 return;
             }
 
@@ -359,7 +386,7 @@ namespace DesafioDIO
             if (confirmacao.ToUpper() == "S")
             {
                 repositorioFilmes.Exclui(indiceFilme);
-                Console.WriteLine("O filme " + repositorioFilmes.RetornaPorId(indiceFilme) + " foi excluído");
+                Console.WriteLine("O filme \"" + repositorioFilmes.RetornaPorId(indiceFilme).RetornaTitulo() + "\" foi excluído");
             }
 
 
@@ -388,7 +415,13 @@ namespace DesafioDIO
 
             if (indiceSerie >= repositorioSeries.Lista().Count)
             {
+                Console.Clear();
+
                 Console.WriteLine("Não há elemento nessa posição");
+
+                Console.WriteLine("Aperte qualquer tecla para continuar");
+                Console.ReadLine();
+                Console.Clear();
                 return;
             }
 
@@ -402,7 +435,7 @@ namespace DesafioDIO
 
             Console.WriteLine(serie);
             Console.WriteLine();
-            Console.WriteLine("Aperte qualquer tecla");
+            Console.WriteLine("Aperte qualquer tecla para continuar");
             Console.ReadLine();
             Console.Clear();
         }
@@ -418,7 +451,13 @@ namespace DesafioDIO
 
             if (indiceFilme >= repositorioFilmes.Lista().Count)
             {
+                Console.Clear();
+
                 Console.WriteLine("Não há elemento nessa posição");
+
+                Console.WriteLine("Aperte qualquer tecla para continuar");
+                Console.ReadLine();
+                Console.Clear();
                 return;
             }
 
